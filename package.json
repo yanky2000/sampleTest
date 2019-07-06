@@ -1,0 +1,39 @@
+{
+	"name": "proj",
+	"version": "1.0.0",
+	"description": "",
+	"main": "con.js",
+	"scripts": {
+		"parcel": "parcel ./src/index.html",
+		"start": "cross-env NODE_ENV=development npm run webpack-dev-server -- --env.mode development --inline=false",
+		"build": "npm run webpack -- --env.mode production",
+		"test": "jest",
+		"test:coverage": "jest --coverage",
+		"test:w": "jest --watch",
+		"webpack": "webpack",
+		"webpack-dev-server": "webpack-dev-server",
+		"tslint": "tslint 'src/**/*.{ts,tsx}'",
+		"lint": "eslint src -c .eslintrc.js --ext js,jsx"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/cli": "^7.4.4",
+		"@babel/preset-env": "^7.4.5",
+		"@types/react": "^16.8.22",
+		"@types/react-dom": "^16.8.4",
+		"babel-loader": "^8.0.6",
+		"chalk": "^2.4.2",
+		"cross-env": "^5.2.0",
+		"nodemon": "^1.19.1",
+		"webpack-cli": "^3.3.5",
+		"webpack-dev-server": "^3.7.2",
+		"webpack-merge": "^4.2.1"
+	},
+	"dependencies": {
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"typescript": "^3.5.2",
+		"webpack": "^4.35.2"
+	}
+}
