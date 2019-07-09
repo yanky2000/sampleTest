@@ -25754,17 +25754,30 @@ if ("development" === 'production') {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Root = void 0;
+exports.Sample2 = exports.Sample = exports.Root = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = _interopRequireWildcard(require("react"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
+// import { Login } from './Login';
 var Root = function Root(props) {
-  return _react.default.createElement("h1", null, "Hello there i'm root!");
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("h1", null, "Hello there i'm root!!!sdf!2"), _react.default.createElement(Sample, null), _react.default.createElement(Sample2, null));
 };
 
 exports.Root = Root;
+
+var Sample = function Sample(props) {
+  return _react.default.createElement("h1", null, "life is tickingadf a");
+};
+
+exports.Sample = Sample;
+
+var Sample2 = function Sample2(props) {
+  return _react.default.createElement("h1", null, "life is tickingadf again");
+};
+
+exports.Sample2 = Sample2;
 },{"react":"../node_modules/react/index.js"}],"constants.js":[function(require,module,exports) {
 "use strict";
 
@@ -25796,7 +25809,7 @@ if (!el) {
 }
 
 _reactDom.default.render(_react.default.createElement(_Root.Root, null), el); // console.log('hey!');
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./screens/Root":"screens/Root.jsx","./constants":"constants.js"}],"../../../.nvm/versions/node/v11.9.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./screens/Root":"screens/Root.jsx","./constants":"constants.js"}],"../../../.nvm/versions/node/v12.6.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -25824,7 +25837,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57061" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54393" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -25999,5 +26012,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../.nvm/versions/node/v11.9.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../.nvm/versions/node/v12.6.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/src.e31bb0bc.js.map
